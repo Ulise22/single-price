@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Single Price</title>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              backgroundColor: {
+                bgPrimary: "#2ab2af",
+                bgSecondary: "#6ccbca",
+                bgTertiary: "#c0df34",
+                bgHero: "#98a6bd"
+              },
+              textColor: {
+                primaryColor: "#2ab2af",
+                secondaryColor: "#c0df34",
+                tertiaryColor: "#ffffff77"
+              },
+              fontFamily: {
+                karla: "karla, sans-serif"
+              }
+            }
+          }
+        }
+    </script>
+
+</head>
+<body>
+  <main class="flex justify-center items-center md:h-screen bg-bgHero">
+      <article class="grid md:grid-cols-2 w-11/12 my-6 md:my-none lg:w-6/12 tracking-wider font-karla">
+        <section class="flex flex-col justify-around md:col-span-2 p-12 bg-white shadow-lg rounded-t-lg">
+            <h2 class="text-3xl text-primaryColor font-semibold pb-6">Join our community</h2>
+
+            <div>
+                <h3 class="text-secondaryColor text-xl font-semibold pb-4">30-day, hassie-free money back guarantee</h3>
+                <p class="text-gray-400">Gain access to our full library of tutorials along with expert code reviews. <br> Perfect for any developers who are serious about honing their skills.</p>
+            </div>
+        </section>
+
+        <section class="flex flex-col justify-between bg-bgPrimary p-12 rounded-bl-lg">
+            <h3 class="text-white text-xl pb-4">Monthly Subscription</h3>
+
+            <div class="flex gap-4 items-center">
+                <h1 class="text-white text-5xl font-medium">$29</h1>
+                <p class="text-tertiaryColor">per month</p>
+            </div>
+
+            <p class="text-white pb-6">Full access for less than $1 a day</p>
+
+            <button class="text-white p-6 bg-bgTertiary rounded h-xl w-full shadow-lg text-xl">Sign Up</button>
+        </section>
+
+        <section class="bg-bgSecondary p-12 rounded-br-lg">
+            <h3 class="text-white text-xl font-semibold pb-8">Why Us</h3>
+
+            <p class="text-gray-200 leading-loose">Tutorials by industry experts <br>
+            Peer & expert code review <br>
+            Coding exercises <br>
+            Access to our GitHub repos <br>
+            Community forums <br>
+            Flashcard Decks <br>
+            New videos every week
+            </p>
+        </section>
+    </article>
+  </main>
+</body>
